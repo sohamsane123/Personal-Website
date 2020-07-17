@@ -17,16 +17,16 @@ hr {
 
 h1 {
   font-size: 2.5rem;
-  margin: 40px auto 0 auto;
+  margin: 0 auto 0 auto;
   font-family: 'Sacramento', cursive;
   color: #00adb5;
 }
 
 h2 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1rem;
+  font-size: 0.6rem;
   color: #00979e;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 h3 {
@@ -37,7 +37,6 @@ font-weight: bold;
 
 .top-container {
   background-color: #222831;
-  position: relative;
   padding-top: 50px;
 }
 
