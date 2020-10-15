@@ -1,20 +1,31 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
     <title>Soham's Website</title>
+    <!-- Bootstrap Stylesheets -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="favicon2.ico">
+
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Staatliches&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/fcfd157019.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <div class="nav-div">
     <div class="nav-bar">
-      <nav class="nav-bar-list">
+      <nav class="nav-bar-list fixed-top bg-dark">
         <a href="#Top">Home</a>
         <a href="#middle">Skills</a>
         <a href="#bottom">Get in Touch</a>
-        <img class="nav-profile-pic" src="images/boy.png" alt="">
+        <img class="nav-profile-pic" src="images/newprofilepic.png" alt="Soham Sane Pic">
       </nav>
 
     </div>
@@ -29,7 +40,7 @@
 
     </div>
     <div class="col-lg-6 col-md-6 col-sm-6">
-      <img class="profile-pic" src="images/boy.png" alt="Profile-Picture">
+      <a href="#"><img class="profile-pic" src="images/newprofilepic.png" alt="Profile-Picture"></a>
     </div>
 
   <div class="col-lg-3 col-md-3 col-sm-3">
@@ -41,10 +52,15 @@
     <br>
     <br>
     <h2>Hello!</h2>
-    <div class="container-fluid">
-      
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-3">
+      </div>
+    <div class="col-lg-6 col-md-6 col-sm-6">
    <p class="profile-para"><b>Welcome to my Personal Site!</b> Here you can check out what I do and get in contact with me for freelance help on your project. I am Soham, a 16-years-old entrepreneurial-minded student from India. I am a <strong>Discord Server Designer</strong> & a <strong>Web Developer</strong>.
     I am self-taught in Discord server making and currently working on learning <em>HTML</em>, <em>CSS</em>, <em>JavaScript (JS)</em>, <em>React.js</em> and many other developer tools from <strong>Angela Yu's Web Development course on Udemy</strong>. You can check out the course <a class="course-link" href="https://www.udemy.com/course/the-complete-web-development-bootcamp/">here</a>.</p>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-3">
+    </div>
     </div>
   <!-- <img class="bottom-cloud" src="images/cloud.png" alt="cloud-images"> -->
   <!-- <img class="" src="images/mountain.png" alt="mountain-image"> -->
@@ -68,11 +84,13 @@
       <img class="skill1-img" src="images/discordicon.gif" alt="compt-img">
       <h3><b>Discord Server Making</b></h3>
       <p class="skill-1-text">I started making Discord servers for my friends, but I quickly became proficient in it. I now make fully functional Discord servers with useful bots and personalised channels along with many interesting features!</p>
+      <p class="skill-1-text"><a href="discordservers.html" class="discordservers-link">Discord Servers</a></p>
     </div>
     <div class="skill-row">
       <img class="skill2-img" src="images/webdevicon.webp" alt="web-dev-gif">
       <h3><b>Web Development</b></h3>
       <p class="skill-1-text">I started learning Coding on Udemy! I plan to make great and attractive websites soon! This is my first website utilizing HTML & CSS. This website will serve as my playground where I will add many features soon!</p>
+      <p class="skill-1-text"><a href="websites.html" class="websites-link">Websites Created/ Designed</a></p>
     </div>
   </div>
   <hr>
@@ -81,7 +99,7 @@
   <section id="bottom">
   <div class="contact-me">
     <h2>Get In Touch</h2>
-    <h3>Want to chat about Discord server design or hiring me for a freelance Web project? Feel free to mail me at the link below:</h3>
+    <h3 class="get-in-touch-text">Want to chat about Discord server design or hiring me for a freelance Web project? Feel free to mail me at the link below:</h3>
     <p></p>
 
     <a class="message-me-btn" href="mailto:sohamsane0@gmail.com">Message Me</a>
@@ -92,16 +110,9 @@
 <br>
 <div class="bottom-container">
   <br>
-  <br>
-  <a class="footer-link" href="https://github.com/sohamsane123"> <img class="github-logo"  src="images/githublogo.png" alt=""> </a>
-  <a class="footer-link" href="https://www.instagram.com/you_more_us/"> <img class="insta-logo" src="images/instalogo.png" alt=""> </a><br>
-  <br> <a class="go-to-top" href="#Top">Go to Top</a>
-  <br>
-  <br>
-  <p class="footer-text-1"> © 2020 Soham Sane.</p>
-  <p class="footer-text-2-1"> | All icons are added from <a class="flaticon-link" href="https://www.flaticon.com/">Flaticon</a> | </p>
-  <p class="footer-text-2-2"> This website is in Beta Version 0.9.1 | </p>
-  <p class="footer-text-2-3"> This website is not yet compatible with mobile devices & tabs. | </p>
+  <a class="footer-link" href="https://github.com/sohamsane123"><i class="fab fa-github-square fa-2x git-icon"></i></a>
+  <a class="footer-link" href="https://www.instagram.com/you_more_us/"><i class="fab fa-instagram-square fa-2x insta-icon"></i></a><br>
+  <p class="footer-text-2-1"> | © 2022 Soham Sane | </p>
   <br>
 </div>
   </section>
