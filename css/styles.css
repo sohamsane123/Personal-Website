@@ -1,8 +1,9 @@
 
 body {
   margin: 0;
+  padding: 0;
   text-align: center;
-  font-family: 'Merriweather', serif;
+  font-family: 'Roboto Slab', serif;
   background-color: #222831;
 }
 
@@ -16,27 +17,28 @@ hr {
 }
 
 h1 {
-  font-size: 2.5rem;
-  margin: 0 auto 0 auto;
-  font-family: 'Sacramento', cursive;
+  font-size: 5.625rem;
+  margin: 50px auto 0 auto;
+  font-family: 'Staatliches', cursive;
   color: #00adb5;
 }
 
 h2 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 1.5rem;
   color: #00979e;
-  margin-top: 0;
+  margin-top: 20px;
 }
 
 h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
 color: #00adb5;
 font-weight: bold;
 }
 
 .top-container {
   background-color: #222831;
+  position: relative;
   padding-top: 50px;
 }
 
@@ -93,25 +95,20 @@ top: 50px;
 }
 
 .profile-pic {
-  width: 100%;
-  margin-bottom: 5px;
+  width: 15%;
+  margin-bottom: 20px;
 }
 
 .message-me-btn {
-  background: #0FC5CC;
-  background-image: -webkit-linear-gradient(top, #0FC5CC, #0E9EA3);
-  background-image: -moz-linear-gradient(top, #0FC5CC, #0E9EA3);
-  background-image: -ms-linear-gradient(top, #0FC5CC, #0E9EA3);
-  background-image: -o-linear-gradient(top, #0FC5CC, #0E9EA3);
-  background-image: linear-gradient(to bottom, #0FC5CC, #0E9EA3);
+  background: #343A40;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
   color: #F9F9F9;
-  font-family:'Montserrat', sans-serif;
-  font-size: 30px;
-  font-weight: 400;
-  padding: 7px;
+  font-family: 'Roboto Slab' sans-serif;
+  font-size: 18px;
+  font-weight: lighter;
+  padding: 5px 10px 5px 10px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -119,6 +116,10 @@ top: 50px;
 
 }
 
+.message-me-btn:hover {
+  text-decoration: none;
+  color: #F9F9F9;
+}
 .footer-link {
   text-decoration: none;
   margin: auto 10px auto 10px;
@@ -127,7 +128,7 @@ top: 50px;
 
 .profile-para {
   color: #bbbbbb;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
   text-align: center;
   line-height: 1.5;
 }
@@ -150,26 +151,17 @@ top: 50px;
   float: left;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 12px 13px;
   text-decoration: none;
   font-size: 17px;
+  font-family: 'Staatliches', cursive;
 }
 
 .nav-bar-list a:hover {
-  background-color: #ddd;
-  color: #222831;
+  background-color: #222831;
+  color: #00adb5;
 }
 
-html {
-  box-sizing: border-box;
-  -ms-overflow-style: scrollbar;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
 
 .container {
   width: 100%;
@@ -179,120 +171,10 @@ html {
   margin-left: auto;
 }
 
-@media (min-width: 576px) {
-  .container {
-    max-width: 540px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
-}
-
-@media (min-width: 992px) {
-  .container {
-    max-width: 960px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1140px;
-  }
-}
-
-.container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-@media (min-width: 576px) {
-  .container, .container-sm {
-    max-width: 540px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container, .container-sm, .container-md {
-    max-width: 720px;
-  }
-}
-
-@media (min-width: 992px) {
-  .container, .container-sm, .container-md, .container-lg {
-    max-width: 960px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container, .container-sm, .container-md, .container-lg, .container-xl {
-    max-width: 1140px;
-  }
-}
-
-.row {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
-}
-
-.col {
-  -ms-flex-preferred-size: 0;
-  flex-basis: 0;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  min-width: 0;
-  max-width: 100%;
-}
-
-.col-lg-6 {
-     align-content: center;
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-    max-width: 50%;
-}
-
-.col-lg-3 {
-    -ms-flex: 0 0 25%;
-    flex: 0 0 25%;
-    max-width: 25%;
-  }
-
-  .col-md-6 {
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-
-  .col-md-3 {
-  -ms-flex: 0 0 25%;
-  flex: 0 0 25%;
-  max-width: 25%;
-}
-
-.col-sm-6 {
-  -ms-flex: 0 0 50%;
-  flex: 0 0 50%;
-  max-width: 50%;
-}
-
-.col-sm-3 {
-  -ms-flex: 0 0 25%;
-  flex: 0 0 25%;
-  max-width: 25%;
-}
 
 .nav-profile-pic {
   float: right;
-  width: 3%;
+  width: 48px;
   padding: 8px;
 }
 
@@ -346,4 +228,46 @@ html {
 
 .insta-logo {
   width: 2%;
+}
+
+.get-in-touch-text{
+  font-family:'Roboto Slab', sans-serif;
+  color: #bbbbbb;
+  font-size: 1rem;
+  font-weight: normal;
+  padding: 5px 700px 5px 700px;
+}
+
+.git-icon:hover  {
+  color: #222831;
+}
+
+.insta-icon:hover  {
+  color: #222831;
+}
+
+.discordservers-link {
+  color: #bfbfbf;
+}
+
+.discordservers-link:hover {
+  color: #bfbfbf;
+  text-decoration: underline;
+}
+
+.websites-link {
+  color: #bfbfbf;
+}
+
+.websites-link:hover {
+  color: #bfbfbf;
+  text-decoration: underline;
+}
+
+.dsh1 {
+  font-size: 2rem;
+}
+
+.dsh2 {
+  font-size: 1rem;
 }
